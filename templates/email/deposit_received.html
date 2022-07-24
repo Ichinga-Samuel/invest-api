@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+    {% block content %}
+        <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:Arial,sans-serif;margin-top:0!important;">
+            You have initiated a deposit of {{"$%.2f"|format(amount)}} under the {{plan}} plan.<br>
+            You will be notified once will confirm your deposit usually between 1 and 2 working days.
+        </p><br>
+        <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:Arial,sans-serif;margin-top:0!important;">
+            Thanks for choosing {{company}}
+        </p>
+    {% endblock content %}

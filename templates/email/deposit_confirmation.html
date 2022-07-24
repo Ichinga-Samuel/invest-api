@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table role="presentation" class="invoice content" width="100%" align="left" style="text-align:left;margin:0 auto;width:100%;">
+        <tr style="vertical-align:middle;" valign="middle">
+            <td valign="top" style="padding-bottom:30px;" class="content">
+                <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:normal;margin-top:0!important;margin-bottom:0!important;">
+                    Deposit {{deposit_id}}<br>
+                    Payment Date {{payment_date}}<br>
+                    Due Date {{due_date}}
+                </p>
+            </td>
+        </tr>
+        <tr style="vertical-align:middle;" valign="middle">
+            <td valign="top" class="content">
+                <table class="invoice-items" cellpadding="0" cellspacing="0" style="font-family:Arial,sans-serif;font-size:14px;width:100%;margin:0;" width="100%">
+                    <tr style="vertical-align:middle;" valign="middle">
+                        <td class="content line-item" valign="top" style="vertical-align:top;border-top-width:1px;border-top-color:#eee;border-top-style:solid;margin:0;padding:5px 0;">
+                            <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:normal;margin-top:0!important;margin-bottom:0!important;">Amount Deposited</p>
+                        </td>
+                        <td class="content line-item alignright" align="right" valign="top" style="vertical-align:top;border-top-width:1px;border-top-color:#eee;border-top-style:solid;margin:0;padding:5px 0;">
+                            <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:normal;margin-top:0!important;margin-bottom:0!important;">{{amount}}</p>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align:middle;" valign="middle">
+                        <td class="content line-item" valign="top" style="vertical-align:top;border-top-width:1px;border-top-color:#eee;border-top-style:solid;margin:0;padding:5px 0;">
+                            <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:normal;margin-top:0!important;margin-bottom:0!important;">Plan</p>
+                        </td>
+                        <td class="content line-item alignright" align="right" valign="top" style="vertical-align:top;border-top-width:1px;border-top-color:#eee;border-top-style:solid;margin:0;padding:5px 0;">
+                            <p style="color:#000000;font-size:16px;mso-line-height-rule:exactly;line-height:24px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:normal;margin-top:0!important;margin-bottom:0!important;">{{plan}}</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+{% endblock content %}
