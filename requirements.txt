@@ -23,6 +23,7 @@ email-validator==1.2.1
 fakeredis==1.8.1
 fastapi==0.79.0
 fastapi-mail==1.0.9
+gunicorn==20.1.0
 h11==0.12.0
 httpcore==0.15.0
 httptools==0.4.0
@@ -59,7 +60,7 @@ sortedcontainers==2.4.0
 starlette==0.19.1
 tomlkit==0.11.1
 tortoise-orm==0.19.2
-typing_extensions==4.3.0
+typing-extensions==4.3.0
 tzdata==2022.1
 tzlocal==4.2
 uvicorn==0.18.2
