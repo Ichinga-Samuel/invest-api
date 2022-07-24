@@ -1,2 +1,5 @@
-# invest-api
-Investment API with FastAPI
+# Investment API with FastAPI
+
+---
+### Swagger UI Docs
+**http:localhost:8080/docs**
