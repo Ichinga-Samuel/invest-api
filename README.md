@@ -2,4 +2,4 @@
 
 ---
 ### Swagger UI Docs
-**http:localhost:8080/docs**
+See docs at [apidocs](https://fastinvestapi.herokuapp.com/docs)
